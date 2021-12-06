@@ -1,12 +1,13 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SeleniumTest {
     @Test
-    public void openGooglePage() {
+    public void openGooglePage() throws InterruptedException {
         WebDriver driver = getDriver("chrome");
        driver.manage().window().maximize(); //robi przeglądarke na caly ekran
        // Dimension windowSize= new Dimension(200,200);//zarządza oknem na ustawione parametry
@@ -15,9 +16,11 @@ public class SeleniumTest {
         //driver.quit();
         //driver.close();
          //przechodzimy pliki cookie
-        driver.switchTo().frame(0);
-        //znalezienie i klikniecie przycisku
-       WebElement agreeButton= driver.findElement(By.xpath("//span[contains(text(),'Zgadzam')]"));
+        Thread.sleep(3000);
+        // driver.switchTo().frame(0);
+        //znalezienie i klikniecie przycisku//xpath("//span[contains(text(),'Zgadzam się')]")
+        By buttonID=By.id("L2AGLb");
+       WebElement agreeButton= driver.findElement(buttonID);
        agreeButton.click();
        //powrót do pierwotnego okna
         driver.switchTo().defaultContent();

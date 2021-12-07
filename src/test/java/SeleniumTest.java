@@ -29,7 +29,7 @@ public class SeleniumTest {
         searchField.sendKeys("Selenium");
         searchField.sendKeys(Keys.ENTER);
 
-        WebElement result= driver.findElement(By.xpath("//a[contains(@href,'selenium.dev')]//span"));
+        WebElement result= driver.findElement(By.xpath("//a[@href='https://www.selenium.dev/']"));
         Assert.assertTrue(result.isDisplayed());
     }
     public WebDriver getDriver(String browser){

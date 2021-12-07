@@ -24,6 +24,10 @@ public class SelectorTest {
         inPut.sendKeys("Pierwszy");
         List<WebElement> inPuts=driver.findElements(By.tagName("input"));
         System.out.println(inPuts.size());
+        By linktekst=By.linkText("Visit W3Schools.com!");
+        WebElement schoolink=driver.findElement(linktekst);
+        By partiallink=By.partialLinkText("Visit");
+        WebElement partialink= driver.findElement(partiallink);
 
     }
 }

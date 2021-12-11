@@ -32,7 +32,7 @@ public class JustJoinTest {
        WebElement emailInput= driver.findElement(By.xpath("//*[@id='offer-apply-container']/form/div[1]/div[2]/div/div[2]/div/input"));
        emailInput.sendKeys("tadeo98hiszpan@gmail.com");
        WebElement textInput= driver.findElement(By.xpath("//*[@id='offer-apply-container']/form/div[1]/div[3]/div[2]/div/textarea[1]"));
-       textInput.sendKeys("Dzień dobry, z góry prepraszam za tą aplikację jestem w trakcie nauki selenium i tą aplikację wysyłam automatycznie.Byłbym bardzo zadowolony gdybym dostał od państwa odpowiedź z informacją czy doszło oraz co poprawić w kodzie link do github--> oraz mój linkedin--> pozdrawiam Miłego dnia ");
+       textInput.sendKeys("Dzień dobry, z góry prepraszam za tą aplikację jestem w trakcie nauki selenium i tą aplikację wysyłam automatycznie. Byłbym bardzo zadowolony i wdzięczny gdybym dostał od państwa odpowiedź z informacją czy doszło poprawnie oraz co poprawić w kodzie link do aktualnego testu w github-->https://gist.github.com/elhispanopolako/dd962807846307daf91cd52561a6edf7 oraz mój linkedin-->https://www.linkedin.com/in/tadeusz-wo%C5%BAniak-3162a217a/  pozdrawiam Miłego dnia Tadeusz Woźniak");
 
 
 
